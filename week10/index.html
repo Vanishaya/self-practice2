@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WEB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            font-size: 16px; 
+            padding: 20px;
+        }
+        label, select, input, button {
+            display: block;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        button {
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>WEB</h1>
+
+    <label for="fontSize">Font Size:</label>
+    <select id="fontSize">
+        <option value="12px">small</option>
+        <option value="16px" selected>medium</option>
+        <option value="20px">large</option>
+    </select>
+
+    <label for="backgroundColor">Background-Color:</label>
+    <input type="color" id="backgroundColor" value="#ffffff" />
+
+    <label for="fontColor">Font color:</label>
+    <input type="color" id="fontColor" value="#000000" />
+
+    <button id="saveBtn">Save</button>
+    <button id="resetBtn">Reset</button>
+<script src="source-code_week10.js" type="module"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Remember Me (Cookies)</title>
+</head>
+<body>
+  <h2>จำชื่อผู้ใช้ด้วย Cookies</h2>
+  <label>ชื่อผู้ใช้: <input type="text" id="username"></label>
+  <button id="saveBtn">Remember Me</button>
+  <button id="clearBtn">Clear</button>
+  <p id="message"></p>
+
+<script src="source-code_week10.js" type="module"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Session Storage Counter</title>
+</head>
+<body>
+  <h2>นับจำนวนครั้งที่รีเฟรชใน Session นี้</h2>
+  <p id="count"></p>
+
+<script src="source-code_week10.js" type="module"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Theme Settings (LocalStorage)</title>
+  <style>
+    body.light {
+      background-color: white;
+      color: black;
+    }
+    body.dark {
+      background-color: black;
+      color: white;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 15px;
+    }
+  </style>
+</head>
+<body>
+  <h2>เปลี่ยนธีมและบันทึกด้วย LocalStorage</h2>
+  <button id="toggleTheme">Toggle Theme</button>
+  <p>ธีมนี้จะถูกจำไว้แม้ปิด browser</p>
+
+<script src="source-code_week10.js" type="module"></script>
+</body>
+</html>

@@ -42,3 +42,31 @@ document.querySelector('button[type="submit"]').addEventListener('click', (e) =>
     document.querySelector('form').reset();
   }
 });
+
+// 3.
+const div = document.getElementById("container");
+const btn = document.getElementById("btn");
+
+div.addEventListener("click", () => {
+  console.log("DIV - Capturing phase");
+}, true);
+
+div.addEventListener("click", () => {
+  console.log("DIV - Bubbling phase");
+}, false);
+
+// Target phase
+btn.addEventListener("click", () => {
+  console.log("BUTTON clicked!");
+});
+
+// 4.
+const buttons = document.querySelectorAll(".btn");
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", (event) => {
+    console.log("คุณคลิกปุ่ม:", event.target.textContent);
+    console.log("ชนิดของ event:", event.type);
+  });
+});
+

@@ -5,3 +5,24 @@
 2.มีกล่องสี่เหลี่ยม 1 อัน มีปุ่ม 3 ปุ่ม เพิ่มเส้นขอบ class bordered ให้กล่อง
 ลบเส้นขอบ class bordered ออกจากกล่อง สลับเส้นขอบ ถ้ามีคลาส bordered 
 ถ้ามีอยู่ให้ลบออก ถ้าไม่มีให้เพิ่มเข้าไป
+
+3.เขียนโปรแกรมที่แสดงรายการ <li> ภายใน <ul> และแสดงชื่อของ firstElementChild, lastElementChild, และ nextElementSibling ของรายการนั้นใน console
+firstElementChild คืนค่าลูกตัวแรกของ <ul> (คือ <li>HTML</li>)
+lastElementChild คืนค่าลูกตัวสุดท้าย (<li>Node.js</li>)
+nextElementSibling คืนค่าพี่น้องถัดไปจาก <li>HTML</li> คือ <li>CSS</li>
+
+4.สร้างหน้าเว็บที่มี <h2> หลายอันและ <li> หลายรายการ
+แล้วใช้ querySelector, querySelectorAll, getElementById, และ getElementsByClassName เพื่อเลือก node ต่าง ๆ
+จากนั้นให้ console.log ออกมาทั้งหมด
+getElementById() คืน element เดียว (string)
+getElementsByClassName() / getElementsByTagName() คืน HTMLCollection (live)
+querySelectorAll() คืน NodeList (static)
+querySelector() คืน element ตัวแรกที่ตรง selector
+
+5.สร้างปุ่ม “Add Item” และ “Remove Item”
+เมื่อคลิก Add Item ให้สร้าง <li> ใหม่เพิ่มเข้าใน <ul>
+เมื่อคลิก Remove Item ให้ลบ <li> สุดท้ายออก
+document.createElement() สร้าง element ใหม่
+appendChild() เพิ่ม node เข้าไปเป็นลูกของ element
+removeChild() ลบ node ลูกออกจาก DOM
+โค้ดนี้ช่วยให้เข้าใจ “Manipulating DOM structure” ได้จริง

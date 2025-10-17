@@ -3,3 +3,10 @@ innerText อ่านเฉพาะ “ข้อความที่มอง
 แสดง <i>Sample Italic Text</i> ไม่เอียง แสดง <i>Sample Italic Text</i> เหมือน innerText
 แต่ต่างกันตรงที่ textContent จะอ่านข้อความที่ถูกซ่อนไว้ได้
 
+2. เขียนโค้ดแสดง ชนิดของ Node ที่อยู่ภายใน <div>
+เช่น Element node, Text node และแสดงค่า nodeName, nodeType, nodeValue ของแต่ละ node
+
+3.เขียนโค้ดที่แสดงเฉพาะ ข้อความที่อยู่ใน Text Node ของ element (ข้าม element node เช่น <span> หรือ <b>)
+
+4.สร้าง <div> ที่มี attribute เช่น id และ style
+จากนั้นแสดงชนิดของ Node ที่เป็น Attribute (Attr Node) และ Element (Element Node)
