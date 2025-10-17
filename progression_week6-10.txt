@@ -1,0 +1,9 @@
+ข้าใจการใช้ฟังก์ชันในเชิง Functional Programming เช่น filter, map, closure, compose → ช่วยให้คิดโค้ดแบบยืดหยุ่นและไม่แก้ไขข้อมูลต้นฉบับ (immutability)
+ฝึกสร้างฟังก์ชันที่คืนฟังก์ชัน (Higher-order functions) เช่น createFilter, composeThree → ได้มุมมองเรื่องการส่งต่อและประกอบฟังก์ชัน
+เข้าใจ DOM และ Node → รู้ความต่างของ innerHTML, innerText, textContent และการทำงานของ Node ชนิดต่าง ๆ (Element, Text, Attribute)
+ฝึกจัดการ DOM แบบไดนามิก → เช่น การเปลี่ยนสี การเพิ่ม/ลบ class การใช้ querySelector / getElementById การเพิ่ม/ลบ <li> ใน <ul>
+เรียนรู้ event handling → keydown, click, submit  จัดการ DOM → สร้าง/เพิ่ม element, เปลี่ยนสี, reset form
+ตรวจสอบ input → validation ช่องว่าง, รหัสผ่านตรงกัน เข้าใจ event flow → capturing vs bubbling
+ใช้ handler เดียว → event.target, event.type ใช้ localStorage → บันทึกค่าฟอนต์/ธีม ให้จำค่าเดิมแม้ปิดเบราว์เซอร์
+ใช้ cookie → จำ username แสดง “Welcome back” และลบค่าได้ใช้ sessionStorage → นับจำนวนครั้งรีเฟรชใน session เดียว (รีเซ็ตเมื่อปิดเบราว์เซอร์)
+ฝึกทำปุ่ม reset/clear → เคลียร์ค่าที่เก็บไว้ได้
